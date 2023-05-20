@@ -26,21 +26,27 @@ class Calculator:
 
 # Perform the calculation based on the operation that the user wants
     def perform_operation(self):
-        if self.operation == "Addition":
-            # If the operation is Addition, add the two numbers.
-            self.result = self.num1 + self.num2
-        elif self.operation == "Subtraction":
-            # If the operation is Subtraction, subtract the second number from the first number
-            self.result = self.num1 - self.num2
-        elif self.operation == "Multiplication":
-            # If the operation is Multiplication, multiply the two numbers.
-            self.result = self.num1 * self.num2
-        elif self.operation == "Division":
-            # If the operation is Division, divide the first number by the second number.
-            self.result = self.num1 / self.num2
-        else:
-            raise ValueError("Invalid Operation")
-    
+        try:
+            if self.operation == "Addition":
+                # If the operation is Addition, add the two numbers.
+                self.result = self.num1 + self.num2
+            elif self.operation == "Subtraction":
+                # If the operation is Subtraction, subtract the second number from the first number
+                self.result = self.num1 - self.num2
+            elif self.operation == "Multiplication":
+                # If the operation is Multiplication, multiply the two numbers.
+                self.result = self.num1 * self.num2
+            elif self.operation == "Division":
+                # If the operation is Division, divide the first number by the second number.
+                self.result = self.num1 / self.num2
+            else:
+                print("Invalid Operation")
+        # Appropriate Exceptions to capture errors during runtime.
+        except ZeroDivisionError:
+            print("Error: Cannot divide by zero. Please enter a non-zero value for the second number.")
+        except Exception as e:
+            print("An error occurred:", e)
+        
 # Display the result
     def display_result(self):
         if self.result is not None:
