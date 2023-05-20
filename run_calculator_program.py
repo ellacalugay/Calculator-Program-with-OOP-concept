@@ -14,3 +14,6 @@ calculator.get_two_numbers()
 
 # Perform the operation based on the user's input
 calculator.perform_operation()
+
+# Display the result
+calculator.display_result()

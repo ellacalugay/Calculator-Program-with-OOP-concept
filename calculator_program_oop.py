@@ -38,3 +38,8 @@ class Calculator:
             raise ValueError("Invalid Operation")
     
 # Display the result
+    def display_result(self):
+        if self.result is not None:
+            print("Result:", self.result)
+        else:
+            print("Operation failed.")
