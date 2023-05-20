@@ -5,8 +5,9 @@ from calculator_program_oop import Calculator
 # Import the Retry class from the calculator_try_again module
 from calculator_try_again import Retry
 
-# Create instances of the Calculator
+# Create instances of the Calculator and Retry
 calculator = Calculator()
+retry = Retry()
 
 # Ask the user for the desired operation
 calculator.get_operation()
