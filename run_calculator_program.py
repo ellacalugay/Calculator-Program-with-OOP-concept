@@ -20,3 +20,6 @@ calculator.perform_operation()
 
 # Display the result
 calculator.display_result()
+
+# Ask if the user wants to try again
+retry.ask_retry()
