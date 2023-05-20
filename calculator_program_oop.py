@@ -9,7 +9,11 @@ class Calculator:
         self.num1 = 0.0
         self.num2 = 0.0
         self.result = None
+
 # Ask the user to choose one of the four math operations 
+    def get_operation(self):
+        self.operation = str(input("Please choose among the four operations - Addition, Subtraction, Multiplication, Division: "))
+        
 # Ask the user for two numbers
 # Perform the calculation based on the operation that the user wants
 # Display the result
