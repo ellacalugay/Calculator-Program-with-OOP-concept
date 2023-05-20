@@ -15,5 +15,10 @@ class Calculator:
         self.operation = str(input("Please choose among the four operations - Addition, Subtraction, Multiplication, Division: "))
         
 # Ask the user for two numbers
+    def get_two_numbers(self):
+        print("Kindly input two numbers.")
+        self.num1 = float(input("Enter the first number: "))
+        self.num2 = float(input("Enter the second number: "))
+        
 # Perform the calculation based on the operation that the user wants
 # Display the result

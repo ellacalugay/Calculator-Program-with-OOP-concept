@@ -8,3 +8,6 @@ calculator = Calculator()
 
 # Ask the user for the desired operation
 calculator.get_operation()
+
+# Ask the user to input two numbers
+calculator.get_two_numbers()
