@@ -19,6 +19,22 @@ class Calculator:
         print("Kindly input two numbers.")
         self.num1 = float(input("Enter the first number: "))
         self.num2 = float(input("Enter the second number: "))
-        
+
 # Perform the calculation based on the operation that the user wants
+    def perform_operation(self):
+        if self.operation == "Addition":
+            # If the operation is Addition, add the two numbers.
+            self.result = self.num1 + self.num2
+        elif self.operation == "Subtraction":
+            # If the operation is Subtraction, subtract the second number from the first number
+            self.result = self.num1 - self.num2
+        elif self.operation == "Multiplication":
+            # If the operation is Multiplication, multiply the two numbers.
+            self.result = self.num1 * self.num2
+        elif self.operation == "Division":
+            # If the operation is Division, divide the first number by the second number.
+            self.result = self.num1 / self.num2
+        else:
+            raise ValueError("Invalid Operation")
+    
 # Display the result

@@ -11,3 +11,6 @@ calculator.get_operation()
 
 # Ask the user to input two numbers
 calculator.get_two_numbers()
+
+# Perform the operation based on the user's input
+calculator.perform_operation()
