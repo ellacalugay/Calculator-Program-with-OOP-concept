@@ -5,3 +5,6 @@ from calculator_program_oop import Calculator
 
 # Create instances of the Calculator
 calculator = Calculator()
+
+# Ask the user for the desired operation
+calculator.get_operation()
