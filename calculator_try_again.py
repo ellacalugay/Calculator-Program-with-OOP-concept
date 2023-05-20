@@ -1,5 +1,7 @@
 # Pseudocode
 # Import the Calculator class from the calculator_program_oop module
+from calculator_program_oop import Calculator
+
 # Define a class named Retry
 # Create a non-parametrized constructor
 # Ask if the user wants to try again or not.
