@@ -17,8 +17,12 @@ class Calculator:
 # Ask the user for two numbers
     def get_two_numbers(self):
         print("Kindly input two numbers.")
-        self.num1 = float(input("Enter the first number: "))
-        self.num2 = float(input("Enter the second number: "))
+        try: 
+            self.num1 = float(input("Enter the first number: "))
+            self.num2 = float(input("Enter the second number: "))
+        # ValueError exceptions to capture errors during runtime.
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
 
 # Perform the calculation based on the operation that the user wants
     def perform_operation(self):
