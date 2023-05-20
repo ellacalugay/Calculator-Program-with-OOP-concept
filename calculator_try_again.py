@@ -19,5 +19,9 @@ class Retry:
                 calculator.get_two_numbers()
                 calculator.perform_operation()
                 calculator.display_result()
-# If no, Display “Thank you!” and exit the program.
-# Exit the loop
+            # If no, Display “Thank you!” and exit the program.
+            elif try_again.lower() == "no":
+                print("Thank you.")
+                break # Exit the loop
+            else: 
+                print("Invalid input. Please enter 'yes' or 'no'.")
