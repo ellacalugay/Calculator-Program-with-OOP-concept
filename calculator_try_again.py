@@ -12,7 +12,12 @@ class Retry:
     def ask_retry(self):
         while True:
             try_again = input("Do you want to try again? (yes/no): ")
-            
-# If yes, repeat the process.
+            # If yes, repeat the process.
+            if try_again.lower() == "yes":
+                calculator = Calculator()
+                calculator.get_operation()
+                calculator.get_two_numbers()
+                calculator.perform_operation()
+                calculator.display_result()
 # If no, Display “Thank you!” and exit the program.
 # Exit the loop
