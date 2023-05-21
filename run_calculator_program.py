@@ -79,12 +79,17 @@ class CalculatorApp:
         self.root.bind("<Return>", self.calculate) 
 
     def calculate(self, event=None):
+        try:
         # Ask the user for the desired operation
-        self.calculator.operation = str(self.combo_operation.get())
-        # Ask the user to input two numbers
-        self.calculator.num1 = float(self.entry_num1.get())
-        self.calculator.num2 = float(self.entry_num2.get())
-
+            self.calculator.operation = str(self.combo_operation.get())
+            # Ask the user to input two numbers
+            self.calculator.num1 = float(self.entry_num1.get())
+            self.calculator.num2 = float(self.entry_num2.get())
+        except ValueError:
+            # Handle any errors that occur during the calculation
+            messagebox.showerror("Error", "Invalid input. Please enter valid numbers.")
+            return
+        
         # Perform the operation based on the user's input
         self.calculator.perform_operation()
 
