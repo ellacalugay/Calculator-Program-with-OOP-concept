@@ -31,7 +31,10 @@ class CalculatorApp:
         self.create_widgets()
         # Bind the <Return> key event to the calculate method
         self.bind_events() 
-        
+
+    # Create widgets
+    def create_widgets(self):
+
         # Ask the user for the desired operation
         self.calculator.get_operation()
 
