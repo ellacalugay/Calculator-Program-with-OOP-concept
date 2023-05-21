@@ -10,21 +10,24 @@ from calculator_program_oop import Calculator
 # Import the Retry class from the calculator_try_again module
 from calculator_try_again import Retry
 
-# Create instances of the Calculator and Retry
-calculator = Calculator()
-retry = Retry()
+# Define a class named CalculatorApp for the tkinter window design
+class CalculatorApp:
 
-# Ask the user for the desired operation
-calculator.get_operation()
+    # Create instances of the Calculator and Retry
+    selcalculator = Calculator()
+    retry = Retry()
 
-# Ask the user to input two numbers
-calculator.get_two_numbers()
+    # Ask the user for the desired operation
+    calculator.get_operation()
 
-# Perform the operation based on the user's input
-calculator.perform_operation()
+    # Ask the user to input two numbers
+    calculator.get_two_numbers()
 
-# Display the result
-calculator.display_result()
+    # Perform the operation based on the user's input
+    calculator.perform_operation()
 
-# Ask if the user wants to try again
-retry.ask_retry()
+    # Display the result
+    calculator.display_result()
+
+    # Ask if the user wants to try again
+    retry.ask_retry()
