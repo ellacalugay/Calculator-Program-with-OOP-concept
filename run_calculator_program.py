@@ -49,6 +49,12 @@ class CalculatorApp:
         # Create a combobox widget for selecting the operation
         self.combo_operation = ttk.Combobox(self.frame_input, values=["Addition", "Subtraction", "Multiplication", "Division"])
         self.combo_operation.grid(row=0, column=1, padx=5)
+
+        # Create label and entry widgets for the first number input
+        self.label_num1 = ttk.Label(self.frame_input, text="First number:", foreground='gold', background="maroon")
+        self.label_num1.grid(row=1, column=0, padx=5)
+        self.entry_num1 = ttk.Entry(self.frame_input)
+        self.entry_num1.grid(row=1, column=1, padx=5)
         
         # Ask the user for the desired operation
         self.calculator.get_operation()
