@@ -12,22 +12,23 @@ from calculator_try_again import Retry
 
 # Define a class named CalculatorApp for the tkinter window design
 class CalculatorApp:
+    # Create a non-parametrized constructor
+    def __init__(self):
+        # Create instances of the Calculator and Retry
+        self.calculator = Calculator()
+        self.retry = Retry()
 
-    # Create instances of the Calculator and Retry
-    selcalculator = Calculator()
-    retry = Retry()
+        # Ask the user for the desired operation
+        self.calculator.get_operation()
 
-    # Ask the user for the desired operation
-    calculator.get_operation()
+        # Ask the user to input two numbers
+        self.calculator.get_two_numbers()
 
-    # Ask the user to input two numbers
-    calculator.get_two_numbers()
+        # Perform the operation based on the user's input
+        self.calculator.perform_operation()
 
-    # Perform the operation based on the user's input
-    calculator.perform_operation()
+        # Display the result
+        self.calculator.display_result()
 
-    # Display the result
-    calculator.display_result()
-
-    # Ask if the user wants to try again
-    retry.ask_retry()
+        # Ask if the user wants to try again
+        self.retry.ask_retry()
