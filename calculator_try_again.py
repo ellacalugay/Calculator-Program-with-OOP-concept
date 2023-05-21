@@ -1,6 +1,7 @@
+# Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #7 | Calculator App with OOP concept
 # Pseudocode
-# Import the Calculator class from the calculator_program_oop module
-from calculator_program_oop import Calculator
+# Import the necessary modules
+from tkinter import messagebox
 
 # Define a class named Retry
 class Retry:
@@ -11,17 +12,10 @@ class Retry:
 # Ask if the user wants to try again or not.
     def ask_retry(self):
         while True:
-            try_again = input("Do you want to try again? (yes/no): ")
+            try_again = messagebox.askquestion("Retry", "Do you want to try again?")
             # If yes, repeat the process.
-            if try_again.lower() == "yes":
-                calculator = Calculator()
-                calculator.get_operation()
-                calculator.get_two_numbers()
-                calculator.perform_operation()
-                calculator.display_result()
+            if try_again == "yes":
+                return True
             # If no, Display “Thank you!” and exit the program.
-            elif try_again.lower() == "no":
-                print("Thank you.")
-                break # Exit the loop
-            else: 
-                print("Invalid input. Please enter 'yes' or 'no'.")
+            elif try_again == "no":
+                return False
