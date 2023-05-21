@@ -38,6 +38,10 @@ class CalculatorApp:
         self.label_header = tk.Label(self.root, text="Simple Calculator App", font=('Helvetica', 16, 'bold'), bg='light blue')
         self.label_header.pack(pady=10)
 
+        # Create a frame widget to hold the input elements
+        self.frame_input = ttk.Frame(self.root)
+        self.frame_input.pack(pady=15)
+        
         # Ask the user for the desired operation
         self.calculator.get_operation()
 
