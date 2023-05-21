@@ -62,6 +62,10 @@ class CalculatorApp:
         self.entry_num2 = ttk.Entry(self.frame_input)
         self.entry_num2.grid(row=2, column=1, padx=5)
 
+        # Create a frame widget to hold the buttons
+        self.frame_buttons = ttk.Frame(self.root)
+        self.frame_buttons.pack(pady=10)
+
         # Ask the user for the desired operation
         self.calculator.get_operation()
 
