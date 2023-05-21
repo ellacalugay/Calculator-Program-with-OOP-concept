@@ -51,7 +51,9 @@ class Calculator:
             self.result = None
             messagebox.showerror("Error", str(e))
         except Exception as e:
-            print("An error occurred:", e)
+            self.result = None
+            messagebox.showerror("Error", f"An error occurred: {str(e)}")
+
         
 # Display the result
     def display_result(self):
