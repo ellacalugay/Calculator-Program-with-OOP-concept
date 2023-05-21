@@ -47,8 +47,9 @@ class Calculator:
                 self.result = None
                 messagebox.showerror("Error", "Invalid operation selected")
         # Appropriate Exceptions to capture errors during runtime.
-        except ZeroDivisionError:
-            print("Error: Cannot divide by zero. Please enter a non-zero value for the second number.")
+        except ZeroDivisionError as e:
+            self.result = None
+            messagebox.showerror("Error", str(e))
         except Exception as e:
             print("An error occurred:", e)
         
