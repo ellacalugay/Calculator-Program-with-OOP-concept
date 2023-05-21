@@ -70,6 +70,10 @@ class CalculatorApp:
         self.button_calculate = tk.Button(self.frame_buttons, text="Calculate", bg='yellow', command=self.calculate)
         self.button_calculate.pack(side=tk.LEFT, padx=5)
 
+        # Create a button widget for clearing the input fields, with a command to execute when clicked
+        self.button_clear = tk.Button(self.frame_buttons, text="Clear", bg="red", command=self.clear)
+        self.button_clear.pack(side=tk.LEFT, padx=5)
+
         # Ask the user for the desired operation
         self.calculator.get_operation()
 
