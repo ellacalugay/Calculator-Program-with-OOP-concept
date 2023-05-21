@@ -1,6 +1,9 @@
 # Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #7 | Calculator App with OOP concept
 
 # Pseudocode
+# Import the necessary modules
+from tkinter import messagebox
+
 # Define a class named Calculator to encapsulate calculator functionality
 class Calculator:
     # Create a non-parametrized constructor
@@ -41,7 +44,8 @@ class Calculator:
                 # If the operation is Division, divide the first number by the second number.
                 self.result = self.num1 / self.num2
             else:
-                print("Invalid Operation")
+                self.result = None
+                messagebox.showerror("Error", "Invalid operation selected")
         # Appropriate Exceptions to capture errors during runtime.
         except ZeroDivisionError:
             print("Error: Cannot divide by zero. Please enter a non-zero value for the second number.")
