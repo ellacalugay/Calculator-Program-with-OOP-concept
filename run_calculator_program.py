@@ -22,6 +22,10 @@ class CalculatorApp:
         self.root = tk.Tk()
         self.root.title("Simple Calculator")
         self.root.configure(background='pink')
+
+        # Set style
+        self.style = ttk.Style()
+        self.style.configure('TButton', font=('Helvetica', 12))
         
         # Ask the user for the desired operation
         self.calculator.get_operation()
