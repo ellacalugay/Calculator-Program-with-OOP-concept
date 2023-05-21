@@ -50,9 +50,9 @@ class Calculator:
         except ZeroDivisionError as e:
             self.result = None
             messagebox.showerror("Error", str(e))
-        except Exception as e:
+        except Exception as err:
             self.result = None
-            messagebox.showerror("Error", f"An error occurred: {str(e)}")
+            messagebox.showerror("Error", f"An error occurred: {str(err)}")
         
 # Display the result
     def display_result(self):
