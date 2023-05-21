@@ -118,4 +118,4 @@ class CalculatorApp:
 app = CalculatorApp()
 app.run()
 
-# End of the code.
+# End of the code
