@@ -42,6 +42,8 @@ class Calculator:
                 self.result = self.num1 * self.num2
             elif self.operation == "Division":
                 # If the operation is Division, divide the first number by the second number.
+                if self.num2 == 0:
+                    raise ZeroDivisionError("Cannot divide by zero. Please enter a non-zero value for the second number.")
                 self.result = self.num1 / self.num2
             else:
                 self.result = None
