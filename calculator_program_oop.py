@@ -53,11 +53,10 @@ class Calculator:
         except Exception as e:
             self.result = None
             messagebox.showerror("Error", f"An error occurred: {str(e)}")
-
         
 # Display the result
     def display_result(self):
         if self.result is not None:
-            print("Result:", self.result)
+            messagebox.showinfo("Result", f"The result is: {self.result}")
         else:
-            print("Operation failed.")
+            messagebox.showerror("Error", "Operation failed.")
