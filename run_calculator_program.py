@@ -41,6 +41,10 @@ class CalculatorApp:
         # Create a frame widget to hold the input elements
         self.frame_input = ttk.Frame(self.root)
         self.frame_input.pack(pady=15)
+
+        # Create a frame widget to hold the input elements
+        self.label_operation = ttk.Label(self.frame_input, text="Choose an operation:", foreground="black", background="light coral", font=(20))
+        self.label_operation.grid(row=0, column=0, padx=5)
         
         # Ask the user for the desired operation
         self.calculator.get_operation()
