@@ -104,3 +104,8 @@ class CalculatorApp:
             messagebox.showinfo("Exit", "Thank you for using our program!")
             # Close the application
             self.root.destroy()
+        
+    def clear(self):
+        self.combo_operation.set("") # Clear the selected operation in the combobox
+        self.entry_num1.delete(0, tk.END) # Clear the first number entry field
+        self.entry_num2.delete(0, tk.END) # Clear the second number entry field
