@@ -62,3 +62,5 @@ class Calculator:
             messagebox.showinfo("Result", f"The result is: {self.result}")
         else:
             messagebox.showerror("Error", "Operation failed.")
+
+# End of the code.
