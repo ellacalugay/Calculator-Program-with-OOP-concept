@@ -113,3 +113,7 @@ class CalculatorApp:
     def run(self):
         # Start the main event loop to run the application
         self.root.mainloop()
+        
+# Create an instance of CalculatorApp and run the app
+app = CalculatorApp()
+app.run()
