@@ -74,6 +74,10 @@ class CalculatorApp:
         self.button_clear = tk.Button(self.frame_buttons, text="Clear", bg="red", command=self.clear)
         self.button_clear.pack(side=tk.LEFT, padx=5)
 
+    # Bind the <Return> key event to the calculate method
+    def bind_events(self):
+        self.root.bind("<Return>", self.calculate) 
+        
         # Ask the user for the desired operation
         self.calculator.get_operation()
 
