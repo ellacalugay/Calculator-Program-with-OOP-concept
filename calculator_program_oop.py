@@ -1,6 +1,28 @@
 # Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #7 | Calculator App with OOP concept
 
 # Pseudocode
+
+
+# ASCII art for the header with ANSI escape codes for color
+print(("\033[38;5;218m" + """
+ _____________________
+|  _________________  |
+| |  Simple      0. | |
+| |     Calculator  | |
+| |           App   | |
+| |_________________| |
+|  ___ ___ ___   ___  |
+| | 7 | 8 | 9 | | + | |
+| |___|___|___| |___| |
+| | 4 | 5 | 6 | | - | |
+| |___|___|___| |___| |
+| | 1 | 2 | 3 | | x | |
+| |___|___|___| |___| |
+| | . | 0 | = | | / | |
+| |___|___|___| |___| |
+|_____________________|
+"""+ "\033[0m"))
+
 # Import the necessary modules
 from tkinter import messagebox
 
