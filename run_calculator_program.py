@@ -97,4 +97,10 @@ class CalculatorApp:
         self.calculator.display_result()
 
         # Ask if the user wants to try again
-        self.retry.ask_retry()
+        if self.retry.ask_retry():
+            self.clear()
+        else:
+            # Display "Thank you" message
+            messagebox.showinfo("Exit", "Thank you for using our program!")
+            # Close the application
+            self.root.destroy()
