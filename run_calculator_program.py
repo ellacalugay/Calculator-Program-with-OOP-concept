@@ -32,8 +32,11 @@ class CalculatorApp:
         # Bind the <Return> key event to the calculate method
         self.bind_events() 
 
-    # Create widgets
+    # Create widgets for the design
     def create_widgets(self):
+        # Create a label widget for the header of the calculator app
+        self.label_header = tk.Label(self.root, text="Simple Calculator App", font=('Helvetica', 16, 'bold'), bg='light blue')
+        self.label_header.pack(pady=10)
 
         # Ask the user for the desired operation
         self.calculator.get_operation()
