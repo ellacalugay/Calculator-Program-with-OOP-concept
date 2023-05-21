@@ -26,6 +26,9 @@ class CalculatorApp:
         # Set style
         self.style = ttk.Style()
         self.style.configure('TButton', font=('Helvetica', 12))
+
+        # Create and set up the UI widgets for the calculator app
+        self.create_widgets()
         
         # Ask the user for the desired operation
         self.calculator.get_operation()
