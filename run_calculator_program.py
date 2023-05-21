@@ -29,6 +29,8 @@ class CalculatorApp:
 
         # Create and set up the UI widgets for the calculator app
         self.create_widgets()
+        # Bind the <Return> key event to the calculate method
+        self.bind_events() 
         
         # Ask the user for the desired operation
         self.calculator.get_operation()
