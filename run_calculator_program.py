@@ -18,6 +18,11 @@ class CalculatorApp:
         self.calculator = Calculator()
         self.retry = Retry()
 
+        # Initialize tkinter app
+        self.root = tk.Tk()
+        self.root.title("Simple Calculator")
+        self.root.configure(background='pink')
+        
         # Ask the user for the desired operation
         self.calculator.get_operation()
 
