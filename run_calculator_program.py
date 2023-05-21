@@ -81,9 +81,9 @@ class CalculatorApp:
     def calculate(self, event=None):
         # Ask the user for the desired operation
         self.calculator.operation = str(self.combo_operation.get())
-
         # Ask the user to input two numbers
-        self.calculator.get_two_numbers()
+        self.calculator.num1 = float(self.entry_num1.get())
+        self.calculator.num2 = float(self.entry_num2.get())
 
         # Perform the operation based on the user's input
         self.calculator.perform_operation()
