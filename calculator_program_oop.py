@@ -1,8 +1,6 @@
 # Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #7 | Calculator App with OOP concept
 
 # Pseudocode
-
-
 # ASCII art for the header with ANSI escape codes for color
 print(("\033[38;5;218m" + """
  _____________________
