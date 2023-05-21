@@ -66,6 +66,10 @@ class CalculatorApp:
         self.frame_buttons = ttk.Frame(self.root)
         self.frame_buttons.pack(pady=10)
 
+        # Create a button widget for calculating the result, with a command to execute when clicked
+        self.button_calculate = tk.Button(self.frame_buttons, text="Calculate", bg='yellow', command=self.calculate)
+        self.button_calculate.pack(side=tk.LEFT, padx=5)
+
         # Ask the user for the desired operation
         self.calculator.get_operation()
 
