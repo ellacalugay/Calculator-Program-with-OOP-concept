@@ -55,7 +55,13 @@ class CalculatorApp:
         self.label_num1.grid(row=1, column=0, padx=5)
         self.entry_num1 = ttk.Entry(self.frame_input)
         self.entry_num1.grid(row=1, column=1, padx=5)
-        
+
+        # Create label and entry widgets for the second number input
+        self.label_num2 = ttk.Label(self.frame_input, text="Second number:", foreground='gold', background="maroon")
+        self.label_num2.grid(row=2, column=0, padx=5)
+        self.entry_num2 = ttk.Entry(self.frame_input)
+        self.entry_num2.grid(row=2, column=1, padx=5)
+
         # Ask the user for the desired operation
         self.calculator.get_operation()
 
