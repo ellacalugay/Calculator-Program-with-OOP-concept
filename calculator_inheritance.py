@@ -2,5 +2,7 @@
 
 # Pseudocode
 # Create an inheritance from calculator.py
+# Importing the Calculator class from calculator_program_oop module
+from calculator_program_oop import Calculator
 # Defining the ScientificCalculator class that inherits from the Calculator class
 # Computation for the square root
