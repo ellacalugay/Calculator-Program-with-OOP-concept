@@ -2,6 +2,7 @@
 
 # Pseudocode
 import math
+from tkinter import messagebox
 
 # Create an inheritance from calculator.py
 # Importing the Calculator class from calculator_program_oop module
@@ -21,10 +22,10 @@ class ScientificCalculator(Calculator):
             self.result = self.num1 + self.num2
         except ValueError:
             self.result = None
-            ("Error", "Invalid input. Please enter valid numbers.")
+            messagebox.showerror("Error", "Invalid input. Please enter valid numbers.")
         except Exception as err:
             self.result = None
-            ("Error", f"An error occurred: {str(err)}")
+            messagebox.showerror("Error", f"An error occurred: {str(err)}")
     
     # Displaying result
         def display_result(self):
