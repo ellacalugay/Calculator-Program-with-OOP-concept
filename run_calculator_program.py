@@ -6,7 +6,7 @@ from tkinter import ttk
 from tkinter import messagebox
 
 # Import the Calculator class from the calculator_inheritance module
-from calculator_program_oop import ScientificCalculator
+from calculator_inheritance import ScientificCalculator
 # Import the Retry class from the calculator_try_again module
 from calculator_try_again import Retry
 
