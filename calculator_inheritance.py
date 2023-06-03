@@ -1,6 +1,8 @@
 # Ella Lureen C. Calugay | BSCPE 1-5 | Assignment #8 | Calculator App with OOP concept and inheritance
 
 # Pseudocode
+import math
+
 # Create an inheritance from calculator.py
 # Importing the Calculator class from calculator_program_oop module
 from calculator_program_oop import Calculator
@@ -23,3 +25,13 @@ class ScientificCalculator(Calculator):
         except Exception as err:
             self.result = None
             ("Error", f"An error occurred: {str(err)}")
+    
+    # Displaying result
+        def display_result(self):
+            if self.result is not None:
+                ("Result", f"The sum is: {self.result}")
+                sqrt_result = math.sqrt(self.result) # Calculating the square root using math.sqrt()
+                rounded_sqrt_result = round(sqrt_result, 2) # Rounding the square root result to 2 decimal places
+                ("Square Root", f"The square root of {self.result} is: {rounded_sqrt_result}")
+            else:
+                ("Error", "Operation failed.")
