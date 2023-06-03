@@ -12,4 +12,14 @@ class ScientificCalculator(Calculator):
         # Calling the constructor of the parent class
         super().__init__()
         
-# Computation for the square root
+    # Computation for the square root
+    def compute_square_root(self):
+        try:
+            self.get_two_numbers() # Calling the get_two_numbers method from the parent class to get input from the user
+            self.result = self.num1 + self.num2
+        except ValueError:
+            self.result = None
+            ("Error", "Invalid input. Please enter valid numbers.")
+        except Exception as err:
+            self.result = None
+            ("Error", f"An error occurred: {str(err)}")
