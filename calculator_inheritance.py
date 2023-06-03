@@ -36,3 +36,5 @@ class ScientificCalculator(Calculator):
             messagebox.showinfo("Square Root", f"The square root of {self.result} is: {rounded_sqrt_result}")
         else:
             messagebox.showerror("Error", "Operation failed.")
+
+# End of the code.
