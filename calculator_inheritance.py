@@ -30,7 +30,7 @@ class ScientificCalculator(Calculator):
     # Displaying result
     def display_result(self):
         if self.result is not None:
-            messagebox.showinfo("Result", f"The sum is: {self.result}")
+            messagebox.showinfo("Result", f"The result is: {self.result}")
             sqrt_result = math.sqrt(self.result) # Calculating the square root using math.sqrt()
             rounded_sqrt_result = round(sqrt_result, 2) # Rounding the square root result to 2 decimal places
             messagebox.showinfo("Square Root", f"The square root of {self.result} is: {rounded_sqrt_result}")
